@@ -5,65 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
     <header id='header'>
       <div id='logo'>
-        <img src='https://s3.amazonaws.com/freecodecamp/original_trombones.png' id='header-img'>
+        <a href="#main">
+          <img src='https://s3.amazonaws.com/freecodecamp/original_trombones.png' id='header-img'>
+        </a> 
       </div>
       <div id="space-between"></div>
-      <nav id='nav'>
+      <nav id='nav-bar'>
         <ul id='nav-list'>
-          <li><a href='#features' id='nav-link'>Features</a></li>
-          <li><a href='#how-it-works' id='nav-link'>How It Works</a></li>
-          <li><a href='#pricing' id='nav-link'>Pricing</a></li>
+          <li><a href='#features'         class='nav-link'>Features</a></li>
+          <li><a href='#how-it-works' class='nav-link'>How It Works</a></li>
+          <li><a href='#pricing' class='nav-link'>Pricing</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id='main'>
       <section id='features'>
         <div id='grid'>
           <div id='icon'>
-            <img src="https://lh3.googleusercontent.com/proxy/vsKDEgOFKsYwr7mKVA81BuBLgGh2n-VMDy3QjJ2-lRKH6kTI8UU149Ap-exKx0TzjQdmwD3t4MR31LSX-8x9CKG9vwcPTgadezyU6gM" id='icon'>
+            <img src="https://lh3.googleusercontent.com/proxy/Ghf7fuFn27wBLIUkuFYl31a6Ufrs9CXQBFMFVF3wq1lMVre_q7FPOJooo_tZwN81_fsTXXdCTnQli8B5Bt2_tEWcuhlj4XIemG1UTVI1EirOET-K47Vx_7xQ" id='icon-img'>
           </div>
           <div id='desc'>
-            <h3>Premium materials</h3>
-            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            <h3 id="feat-desc">Premium materials</h3>
+            <p id="feat-text">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
           </div>
         </div>
 
         <div id='grid'>
           <div id='icon'>
-            <img src="https://lh3.googleusercontent.com/proxy/LKMqy4fGjT3F4aZ9QzokVgTin1-QPY3YDYgC92ck37qtzoVE0IN4fI8CznI8tdN60Z_L6leJfo_CZaUMSiF1cT-MMRtP0RhhBJJ7NqByqAELLMj5nycnJfSStcgH1uPEmhjwYj4--A" id='icon'>
+            <img src="https://lh3.googleusercontent.com/proxy/ao-szLg4TFBXUEIoO-8VGcWvSMAdrde_zmlHjQQGDFw9nKsf1O-XsnWb-uIbTPDdIRzvVHy6BoENXLWH1tPx0wEOdwClBn9IF_FQwwjm2rZ8" id='icon-img'>
           </div>
           <div id='desc'>
-            <h3>Fast Shipping</h3>
-            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            <h3 id="feat-desc">Fast Shipping</h3>
+            <p id="feat-text">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
           </div>
         </div>
 
         <div id='grid'>
           <div id='icon'>
-            <img src="https://lh3.googleusercontent.com/proxy/W7sfqAkbiNX_2ZxB-BJESCoSFKy-FMK9Cia3gdPWnZ8_yJb90ymPGWyboI6OCUVw7vLvKXL7TpOen94ObS0JI6JJgcORF8vRmmgypmUeStgTWV3Q0bKQWAnFu961ndNEazUSzA" id='icon'>
+            <img src="https://www.pngarts.com/files/1/Quality-Guaranteed-Free-PNG-Image.png" id='icon-img'>
           </div>
           <div id='desc'>
-            <h3>Quality Assurance</h3>
-            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            <h3 id="feat-desc">Quality Assurance</h3>
+            <p id="feat-text">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
           </div>
         </div>
       </section>
 
       <section id='how-it-works'>
+        <div class="vid-div">
+          <h3 class="vid-ques">Wonder how it works?</h3>
+          <p class="vid-text">See below!</p>
+        </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
+
       <section id='pricing'>
-        <div>
-          <div>
-            <h2>Tenor trombone</h2>
+        <div id="item-box">
+          <div id="item-heading">
+            <h2 id="i-heading">TENOR TROMBONE</h2>
           </div>
-          <div>
-            <h4>$600</h4>
-            <ul>
+          <div id="item-desc">
+            <h4 id="item-price">$600</h4>
+            <ul id="i-desc">
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
@@ -73,13 +81,13 @@
           </div>
         </div>
 
-        <div>
-          <div>
-            <h2>Tenor trombone</h2>
+        <div id="item-box">
+          <div id="item-heading">
+            <h2 id="i-heading">BASS TROMBONE</h2>
           </div>
-          <div>
-            <h4>$600</h4>
-            <ul>
+          <div id="item-desc">
+            <h4 id="item-price">$900</h4>
+            <ul id="i-desc">
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
@@ -89,13 +97,13 @@
           </div>
         </div>
 
-        <div>
-          <div>
-            <h2>Tenor trombone</h2>
+        <div id="item-box">
+          <div id="item-heading">
+            <h2 id="i-heading">VALVE TROMBONE</h2>
           </div>
-          <div>
-            <h4>$600</h4>
-            <ul>
+          <div id="item-desc">
+            <h4 id="item-price">$1200</h4>
+            <ul id="i-desc">
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
@@ -105,23 +113,24 @@
           </div>
         </div>
       </section>
-      <div>
+
+      <div id="form-div">
         <form action='https://www.freecodecamp.com/email-submit' id='form'>
-          <legend>Enter your email here for more information about any updates on the future.</legend>
+          <legend id="email-legend">Enter your email here for more information about any updates on the future.</legend>
           <label for="email">
            <input type="email" name="email" id="email" placeholder="Enter your email address." required> 
-          </label><br>
+          </label>
           <input type="submit" value="Submit" id="submit">
         </form>
       </div>
     </main>
-    <footer>
-      <ul>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Contact</li>
-      </ul>
-      <p>Copyright 2016, Original Trombones</p>
-    </footer>
   </body>
+  <footer>
+     <ul id="footer-list">
+      <li id="li-item">Privacy</li>
+      <li id="li-item">Terms</li>
+      <li id="li-item">Contact</li>
+    </ul>
+    <p id="copyright">Copyright 2016, Original Trombones</p>
+  </footer>
 </html>

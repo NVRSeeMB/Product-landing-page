@@ -83,7 +83,8 @@ ul {
   align-items: flex-start;
   margin-left: 25%;
   margin-right: 25%;
-  
+  padding-left: 5%;
+  padding-right: 5%;
 
 }
 
@@ -150,7 +151,50 @@ ul {
   align-content: center;
   justify-content: space-around;
   margin-bottom: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
 
+}
+
+@media (max-width: 1750px) {
+  #pricing {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+}
+
+@media (max-width: 1225px) {
+  #pricing {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  #pricing {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  }
+
+  #item-box {
+    margin-top: 30px;
+  }
 }
 
 #item-box {
@@ -202,7 +246,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 20px;
 }
 
 #form {
@@ -220,26 +264,40 @@ ul {
 #email {
   max-width: 275px;
   width: 100%;
-  padding: 7px;
+  padding: 5px;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+#submit {
+  margin-left: 13px;
 }
 
 /*  next is gonna be the code for the email form*/
 
 footer {
   background-color: darkgrey;
-  margin-left: -10px;
-  margin-right: -10px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  
 }
 
 #footer-list {
-  margin-bottom: 0px;
-
+  margin: 20px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 
 #copyright {
-  margin-top: 5px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+#li-item {
+  margin-left: 10px;
+  margin-right: 10px;
 }
